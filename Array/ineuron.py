@@ -1,5 +1,5 @@
 ## Search for an element in an array and if the element is present in the array return its index.
-
+# Linear search 
 def element_search(arr , x):
     for i in range(len(arr)):
         if arr[i] == x:
