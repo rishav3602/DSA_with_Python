@@ -11,6 +11,8 @@ def rev_arr(arr):
 
     return arr
 
+
+
 array = [1,2,3,4,5,6,7,8]
 output = rev_arr(array)
 print(f"Your reversed array is : {output}")
@@ -31,3 +33,19 @@ def find_min_max(arr):
 array = [-1,2,3,90,5,6,7,8,1]
 output = find_min_max(array)
 print(f"Your min and max element in the given array is : {output}")
+
+## remove duplicates from an array without using any function
+
+def dup_del(arr):
+    unique_arr = []
+    for elements in arr:
+        if elements not in unique_arr:
+            unique_arr.append(elements)
+
+    return unique_arr
+        
+
+array = [1,2,3,3,21,4,5,4,7,8,5,8]
+output = dup_del(array)
+print(f"Your unique array without any duplicates values is : {output}")
+
