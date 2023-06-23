@@ -1,7 +1,7 @@
 # Reverse an array.
 
 def reverse (arr):
-    return arr[: : -1]
+    return arr[: : -1]   # we can also do the same using reverse function
 
 array = [1,2,3,4,5]
 output = reverse(array)

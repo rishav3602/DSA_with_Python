@@ -42,3 +42,31 @@ i = 0
 j = len(array) - 1
 output = BinarySearch(array,i,j,x)
 print(f"Your element is at index : {output}")
+
+## Binary search in 2d array
+
+def Binary_Search_Matrix(arr,x):
+    m = len(arr)
+    if m == 0:
+        return False
+    n = len(arr[0])
+
+    start = 0
+    end = m*n-1
+
+    while start <= end:
+        mid = start + (end-start)//2
+        mid_element = arr[mid//n][mid%n]
+        if mid_element == x:
+            return True
+        elif mid_element < x:
+            start = mid + 1
+        else: 
+            end = mid - 1
+        
+    return False
+
+array = [[1,3,5,7],[10,13,16,20],[23,30,34,60]]
+x = 33
+output = Binary_Search_Matrix(array, x)
+print(output)

@@ -1,7 +1,7 @@
 ## Reverse a string:
 
 def rev_str(str):
-    return str[: : -1]
+    return str[: : -1]  # we can also do the same using reverse function
 
 string = "Rishav"
 output = rev_str(string)
