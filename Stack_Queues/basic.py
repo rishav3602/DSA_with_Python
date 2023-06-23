@@ -1,50 +1,50 @@
-# ## Push Pop peek operartions after implementing a stack.
+## Push Pop peek operartions after implementing a stack.
 
-# class Stack:
-#     def __init__(self):
-#         self.stack = []
+class Stack:
+    def __init__(self):
+        self.stack = []
 
-#     def push(self, item):
-#         self.stack.append(item)
-#         print(f"Pushed {item} to the stack.")
+    def push(self, item):
+        self.stack.append(item)
+        print(f"Pushed {item} to the stack.")
 
-#     def pop(self):
-#         if not self.is_empty():
-#             item = self.stack.pop()
-#             print(f"Popped {item} from the stack.")
-#             return item
-#         else:
-#             print("Stack is empty. Cannot perform pop operation.")
-#             return None
+    def pop(self):
+        if not self.is_empty():
+            item = self.stack.pop()
+            print(f"Popped {item} from the stack.")
+            return item
+        else:
+            print("Stack is empty. Cannot perform pop operation.")
+            return None
 
-#     def peek(self):
-#         if not self.is_empty():
-#             top_item = self.stack[-1]
-#             print(f"Top item in the stack: {top_item}")
-#             return top_item
-#         else:
-#             print("Stack is empty. Cannot perform peek operation.")
-#             return None
+    def peek(self):
+        if not self.is_empty():
+            top_item = self.stack[-1]
+            print(f"Top item in the stack: {top_item}")
+            return top_item
+        else:
+            print("Stack is empty. Cannot perform peek operation.")
+            return None
 
-#     def is_empty(self):
-#         return len(self.stack) == 0
+    def is_empty(self):
+        return len(self.stack) == 0
 
 
 
-# stack = Stack()
-# stack.push(1)
-# stack.push(2)
-# stack.push(3)
-# stack.push(4)
-# stack.push(5)
-# stack.push(6)
-# stack.push(7)
-# stack.pop()
-# stack.pop()
-# stack.pop()
-# stack.peek()
-# stack.peek()
-# # print(stack)
+stack = Stack()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.push(4)
+stack.push(5)
+stack.push(6)
+stack.push(7)
+stack.pop()
+stack.pop()
+stack.pop()
+stack.peek()
+stack.peek()
+# print(stack)
 
 
 ## Enqueue, dequeue and peek operations after implementing a queue.
