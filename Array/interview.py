@@ -56,7 +56,7 @@ print(f"Your unique array without any duplicates values is : {output}")
 
 
 
-## Returning the index of the first 8 from the given array using Binary Search 
+## Returning the index of the first 8 from the given array using Linear Search 
 array = [1,2,3,8,3,6,8,9,4,8]
 
 def ret_index(arr , x):

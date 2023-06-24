@@ -1,5 +1,4 @@
 ## Reverse a string:
-
 def rev_str(str):
     return str[: : -1]  # we can also do the same using reverse function
 
@@ -9,7 +8,6 @@ print(f"Your reversed string is : {output}")
 
 
 # Checking if a given string is plaindrome or not
-
 def str_plndrm(str):
     str = str.lower().replace(" " ,"")
     if str == str[: : -1]:
@@ -23,7 +21,6 @@ print(output)
 
 
 # Counting the occurance of a character in a string.
-
 def chr_count(str, chr):
     str = str.lower().replace(" ", "")
     count = str.count(chr)
